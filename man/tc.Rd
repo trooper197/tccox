@@ -5,7 +5,7 @@
   Treatment Choice Cox Model
 }
 \description{
-  Builds time-varying covariates needed and fits Treatment Choice Cox models (Paramteric Treatment Choice (PTC), Hybrid Treatment Choice (HTC), or Interval Treatment Choice (ITC)) for observational time-to-event studies.
+  Builds time-varying covariates needed and fits Treatment Choice Cox models (Parametric Treatment Choice (PTC), Hybrid Treatment Choice (HTC), or Interval Treatment Choice (ITC)) for observational time-to-event studies.
 }
 \usage{
 tc(type = "PTC", dataset, cov_names, maxfollow=100, nmaxint = 80, interval_width = 0.1,

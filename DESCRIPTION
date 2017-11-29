@@ -6,7 +6,7 @@ Author: James F. Troendle
 Date: 2017-11-28
 Maintainer: James F. Troendle <jt3t@nih.gov>
 Description: Builds time-varying covariates needed and fits Treatment Choice Cox models 
-    (Parameteric Treatment Choice (PTC), Hybrid Treatment Choice (HTC), or Interval Treatment Choice 
+    (Parametric Treatment Choice (PTC), Hybrid Treatment Choice (HTC), or Interval Treatment Choice 
     (ITC)) for observational time-to-event studies.
 License: GPL-3
 Encoding: UTF-8

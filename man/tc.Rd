@@ -106,10 +106,29 @@ tc(type = "PTC", dataset, cov_names, maxfollow=100, nmaxint = 80, interval_width
 }
 \examples{
 # Use simulated data in example.dat to build and fit a PTC model
+#
 require(stats)
 require(survival)
 cov_names=names(example.dat)[1:2]
 z=tc(type="PTC", dataset=example.dat, cov_names = cov_names, min_exp_events = 10,
+ min_future_events = 50)
+z[[1]]
+#
+# Use simulated data in example.dat to build and fit an HTC model
+#
+require(stats)
+require(survival)
+cov_names=names(example.dat)[1:2]
+z=tc(type="HTC", dataset=example.dat, cov_names = cov_names, min_exp_events = 10,
+ min_future_events = 50)
+z[[1]]
+#
+# Use simulated data in example.dat to build and fit an ITC model
+#
+require(stats)
+require(survival)
+cov_names=names(example.dat)[1:2]
+z=tc(type="ITC", dataset=example.dat, cov_names = cov_names, min_exp_events = 10,
  min_future_events = 50)
 z[[1]]
 }

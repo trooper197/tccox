@@ -262,7 +262,7 @@ if (nstarts > 0) {
   nstart_fit=max(index[start_times <= last_start_time])
 } else {
   last_start_time=0
-  cat('Last start time utilized=',last_start_time,'\n')
+#  cat('Last start time utilized=',last_start_time,'\n')
   nstart_fit=0
 }
 if (nstart_fit < 0) {nstart_fit=0}
@@ -1097,7 +1097,7 @@ itcfitter=function(dataset,ncov,cov_names,nitc_start,itc_start_endpoint,nitc_sto
 #cat(' USES ANALYSIS WITH START AND STOP INTERVALS','\n')
 #cat('----------------------------------------------------------','\n')
 #cat('----------------------------------------------------------','\n')
-
+data3=dataset
 if (nitc_start > 0 & nitc_stop > 0) {
   data3=transform(dataset,treatstartp=tstartp,treatstopp=tstopp)
 } else {
@@ -1171,7 +1171,7 @@ htcfitter=function(dataset,ncov,cov_names,nitc_start,itc_start_endpoint,nitc_sto
 #cat('START HYBRID TREATMENT CHOICE MODEL SECTION','\n')
 #cat('----------------------------------------------------------','\n')
 #cat('----------------------------------------------------------','\n')
-
+data2=dataset
 if (nitc_start > 0 & nitc_stop > 0) {
   data2=transform(dataset,treatstartp=tstartp,treatstopp=tstopp)
 } else {
